@@ -1,7 +1,7 @@
 # dunght160387-entity
 Easy steps to use dunght160387-entity:
 
-    1. Add requirement to composer.json
+1. Add requirement to composer.json
 ```
 "require": {
     ...,
@@ -14,7 +14,7 @@ Easy steps to use dunght160387-entity:
 ```
 then `composer install`
 
-    2. Register bundle in AppKernel.php
+1. Register bundle in AppKernel.php
 ```
 $bundles = array(
     ...,
@@ -22,7 +22,7 @@ $bundles = array(
 );
 ```
 
-    3. Add prefix for bundle in autoload.php
+1. Add prefix for bundle in autoload.php
 ```
 $loader = require __DIR__.'/../vendor/autoload.php';
 ...
@@ -33,7 +33,7 @@ $loader->add('Tagcade', (__DIR__.'/../vendor/tagcade/entitybundle'));
 return $loader;
 ```
 
-    4. Modify config.yml for doctrine
+1. Modify config.yml for doctrine
 ```
 doctrine:
       dbal: ...
@@ -53,7 +53,7 @@ doctrine:
                           is_bundle:  false
 ```
 
-    5. Update schema and enjoy
+1. Update schema and enjoy
 ```
 php app/console doctrine:schema:update --dump-sql
 ```
