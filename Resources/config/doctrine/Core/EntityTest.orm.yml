@@ -1,0 +1,13 @@
+Tagcade\EntityBundle\Entity\Core\EntityTest:
+    type: entity
+    table: core_entity_test
+    #repositoryClass: Tagcade\EntityBundle\Repository\Core\EntityTestRepository
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 100
